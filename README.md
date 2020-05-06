@@ -51,3 +51,33 @@ from nltk import flatten \
 from pickle import load \
 from pickle import dump 
 
+#### Python indentation is not followed in below code samples.
+
+#### def normalize_document(txt):
+##### Assumptions made in this step:
+1) As every step is from nltk tokenization, lemmatization and stemming may be that appropriate.
+
+*step1:-* Words are tokenized. 
+> tokens = nltk.word_tokenize(txt)
+
+*step2:-* Removing english stop words and word tokenization.
+> clean_tokens = [t for t in tokens if t not in stop_words] 
+    
+*step3:-* Lemmatizing of words. 
+>  wordnet_lem = [WordNetLemmatizer().lemmatize(w) for w in clean_tokens]
+
+*step4:-* Snowball stemmer. 
+> stems = [nltk.stem.SnowballStemmer('english').stem(w) for w in wordnet_lem]
+
+*step5:-* Every step is done one after other finally will be joining while returning.
+ > return ' '.join(wordnet_lem)
+ 
+ #### def normalizedf(df_ini):
+ This function simply takes our initial dataframe to normalize ingredients and return a new dataframe with normalized data attached. 
+ 
+ Normalizing each row of ingredients.
+ >for i in df_ini['ingredients']: \
+      i = ' '.join(i) \
+      x.append(normalize_document(i))
+
+ 
