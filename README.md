@@ -5,7 +5,7 @@ The goal of the project is to create an application that take a list of ingredie
 ### Email :- Ramcharankankanala@gmail.com
 
 ### Flow
-Input is passed as list of ingredients.
+Input is passed as list of ingredients(changeable variable).
 1) Loading JSON data into dataframe.
 2) Normalizing and converting "ingredients" into vectors along with input.
 3) Finding cosine similarity score with respect to input and getting top10 similar ID's.
