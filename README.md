@@ -25,3 +25,29 @@ For sending data into the model it needed to be converted into vector form (both
 #### N value:-
 As, N value can be any value I choose it to be 0.001 percent of overall foods available which is nearly 40. So, user in the end will get top 40 similar meals based upon cosine similarity scores. 
 
+### Functions and implementation:-
+Packages used \
+import gensim as gensim \
+import numpy as np  \
+import os\
+import pandas as pd  \
+import json \
+import gc \
+import re \
+import nltk \
+import numpy as np \
+nltk.download('punkt') \
+nltk.download('stopwords') \
+nltk.download('wordnet') \
+from sklearn.ensemble import RandomForestClassifier \
+from sklearn.metrics import accuracy_score \
+from sklearn.model_selection import train_test_split \
+from sklearn.preprocessing import LabelEncoder \
+stop_words = nltk.corpus.stopwords.words('english') \
+from nltk.stem.wordnet import WordNetLemmatizer \
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer \
+from sklearn.metrics.pairwise import cosine_similarity \
+from nltk import flatten \
+from pickle import load \
+from pickle import dump 
+
