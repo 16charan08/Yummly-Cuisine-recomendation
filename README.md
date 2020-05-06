@@ -26,7 +26,7 @@ For sending data into the model it needed to be converted into vector form (both
 As, N value can be any value I choose it to be 0.001 percent of overall foods available which is nearly 40. So, user in the end will get top 40 similar meals based upon cosine similarity scores. 
 
 ### Functions and implementation:-
-Packages used \
+#### Packages used:-
 import gensim as gensim \
 import numpy as np  \
 import os\
