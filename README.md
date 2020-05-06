@@ -170,7 +170,7 @@ print("Top10 ID's for given input") \
 print(getcloseid(updated_df,N)) \
 print("Cuisine for given input",predictcuisine(input,model,df_ini)) \
 
-#### Output: - 
+#### Output(Id's of most similar meals along with cosine similarity are returned): - 
 model is already executed with 75.14770584538026 \
 Top10 ID's for given input\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     score \
@@ -185,8 +185,8 @@ Top10 ID's for given input\
 30326  17469  0.433155 \
 19777  46787  0.429784 \
 13985  37784  0.420847 \
-21633  14661  0.419719\ 
-32624  22292  0.418027\
+21633  14661  0.419719 \ 
+32624  22292  0.418027 \
 35776  26639  0.414957 \
 9290    1131  0.411977 \
 34723  35183  0.410843 \
