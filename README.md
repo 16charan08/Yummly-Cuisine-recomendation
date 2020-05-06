@@ -5,6 +5,7 @@ The goal of the project is to create an application that take a list of ingredie
 ### Email :- Ramcharankankanala@gmail.com
 
 ### Flow
+Input is passed as list of ingredients.
 1) Loading JSON data into dataframe.
 2) Normalizing and converting "ingredients" into vectors along with input.
 3) Finding cosine similarity score with respect to input and getting top10 similar ID's.
@@ -71,7 +72,8 @@ from pickle import dump
 
 *step5:-* Every step is done one after other finally will be joining while returning.
  > return ' '.join(wordnet_lem)
- 
+
+
  #### def normalizedf(df_ini):
  This function simply takes our initial dataframe to normalize ingredients and return a new dataframe with normalized data attached. 
  
@@ -81,3 +83,15 @@ from pickle import dump
       x.append(normalize_document(i))
 
  
+#### def tfidfvecinput(input,df):
+This function takes normalized dataframe along with our input list and returns tdidf vector which contains input vector.
+
+*step1:-* First input list is also normalized accordingly how our data is normalized.
+> input_normalized.append(normalize_document(joined_input[0]))
+
+*step2:-* Next our normalized input is inserted at first position of normalized ingredients data.
+> y.insert(0,input_normalized[0])
+
+*step3:-* Along with this inserted input tfidf vectorizer is calculated and that is returned.
+>  tfidf_matrix_train = vectorizer.fit_transform(y).todense()
+
