@@ -95,3 +95,10 @@ This function takes normalized dataframe along with our input list and returns t
 *step3:-* Along with this inserted input tfidf vectorizer is calculated and that is returned.
 >  tfidf_matrix_train = vectorizer.fit_transform(y).todense()
 
+#### def cosinesim(mat,df):
+This function takes output from previous function(vectorized matrix) and normalized dataframe to calculate and append cosine similarity scores with respect to input list of ingredients.
+
+Cosine similarity score calculation from sklearn package. 
+> simi = cosine_similarity(mat[0:1], mat).flatten() {mat[0:1] is our input list} \
+so with respect to input list cosine similarity scores are calculated and returned.
+
