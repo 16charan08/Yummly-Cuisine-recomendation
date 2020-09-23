@@ -1,5 +1,5 @@
 
-## CS5293_Spring2020_Project3
+## Yummly-Cusine-recomendation-system
 The goal of the project is to create an application that take a list of ingredients from a user and attempts to predict the type of cuisine and similar meals
 ### Author :- Ram charan Reddy Kankanala
 ### Email :- Ramcharankankanala@gmail.com
